@@ -1,6 +1,4 @@
-spd = 3;
-
-x_direction = 0;
-y_direction = 0;
-
+walk_speed = 4;
+horizontal_speed = 0;
+vertical_speed = 0;
 image_speed = 0;
