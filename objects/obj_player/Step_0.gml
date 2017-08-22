@@ -4,26 +4,25 @@ key_up = keyboard_check(vk_up) || keyboard_check(ord("W"));
 key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
 
 // Calculate movement
-var horizontal_move = key_right - key_left;
-var vertical_move = key_down - key_up;
+horizontal_move = key_right - key_left;
+vertical_move = key_down - key_up;
 
-horizontal_speed = horizontal_move * walk_speed;
-vertical_speed = vertical_move * walk_speed;
+if (horizontal_speed == 0 || horizontal_move != 0){
+	horizontal_speed = horizontal_move * walk_speed;
+}
 
-// Horizontal collision
+if (vertical_speed == 0 || vertical_move != 0){
+	vertical_speed = vertical_move * walk_speed;
+}
+
+// Horizontal movement/collision
 if (place_meeting(x + horizontal_speed, y, obj_wall)) {
-	while(!place_meeting(x + sign(horizontal_speed), y, obj_wall)) {
-		x = x + sign(horizontal_speed);
-	}
 	horizontal_speed = 0;
 }
 x = x + horizontal_speed;
 
-// Vertical collision
+// Vertical movement/collision
 if (place_meeting(x, y + vertical_speed, obj_wall)) {
-	while(!place_meeting(x, y + sign(vertical_speed), obj_wall)) {
-		y = y + sign(vertical_speed);
-	}
 	vertical_speed = 0;
 }
 y = y + vertical_speed;
