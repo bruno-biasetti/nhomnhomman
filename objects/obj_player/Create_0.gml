@@ -4,3 +4,4 @@ vertical_speed = 0;
 horizontal_move = 0;
 vertical_move = 0;
 image_speed = 0;
+paused = false;

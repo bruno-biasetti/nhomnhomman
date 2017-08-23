@@ -1,7 +1,14 @@
-key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
-key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
-key_up = keyboard_check(vk_up) || keyboard_check(ord("W"));
-key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
+key_left = 0;
+key_right = 0;
+key_up = 0;
+key_down = 0;
+
+if(!paused) {
+	key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
+	key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
+	key_up = keyboard_check(vk_up) || keyboard_check(ord("W"));
+	key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
+}
 
 // Calculate movement
 horizontal_move = key_right - key_left;
@@ -33,4 +40,13 @@ if (horizontal_speed < 0) image_angle = 180;
 if (vertical_speed > 0) image_angle = 270;
 if (vertical_speed < 0) image_angle = 90;
 
-
+// End game
+if(instance_number(obj_food) == 0) {
+	with(obj_player) {
+		horizontal_speed = 0;
+		vertical_speed = 0;
+		paused = true;
+		image_speed = 0;
+		instance_create_layer(480, 400, "messages", obj_game_over)
+	}
+}

@@ -71,6 +71,22 @@
             }
         },
         {
+            "Key": "3c87f2c2-f586-469a-bbb2-c63fe72e1d08",
+            "Value": {
+                "id": "64ab6f55-c548-4139-8eef-ecc591ab489d",
+                "resourcePath": "fonts\\fnt_score\\fnt_score.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "4b4498e4-c9de-4a5b-8a94-f81e5c46791b",
+            "Value": {
+                "id": "1d2e9cc0-dc58-4c9a-80d5-f2d7f74758af",
+                "resourcePath": "objects\\obj_score\\obj_score.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "53e6f558-42e5-4fcd-a601-166af31be678",
             "Value": {
                 "id": "cd1bb896-e6b5-42fa-b590-35529bd8c044",
@@ -146,8 +162,16 @@
             "Key": "7a6cd220-372d-4a59-8387-63ec46729ace",
             "Value": {
                 "id": "1605001e-01ad-43bf-b9c9-605abd79adb4",
-                "resourcePath": "sprites\\sprite3\\sprite3.yy",
+                "resourcePath": "sprites\\spr_food\\spr_food.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7b8eba43-7b38-4638-b7d3-695e75c54c9a",
+            "Value": {
+                "id": "e92bf408-4aaa-4230-a435-e0a469f51c0f",
+                "resourcePath": "objects\\obj_game_over\\obj_game_over.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -164,6 +188,22 @@
                 "id": "618996a2-d98d-4444-af38-21c7e078b70b",
                 "resourcePath": "views\\98874115-9457-47e5-a5e7-a705213f68a3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9c199141-eca0-4d7c-87e5-35b8f3d3edb8",
+            "Value": {
+                "id": "896cd257-98e5-48fa-be9a-17bb9d6d629b",
+                "resourcePath": "sprites\\spr_game_over\\spr_game_over.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "abfb5de0-64b4-4ccd-852f-5612ce88b05d",
+            "Value": {
+                "id": "5aa006d8-228a-49e1-b089-d7f118b0a716",
+                "resourcePath": "sprites\\spr_food_score\\spr_food_score.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -228,6 +268,14 @@
                 "id": "f5f12f40-917e-4dc2-8e81-5895d4526b5d",
                 "resourcePath": "views\\e50ffcaf-1c2d-4cd6-b6c2-a4c686c761c5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e7bca671-06b9-47f8-b341-b267845e6a25",
+            "Value": {
+                "id": "8b30df0e-08a8-41bd-a393-6d0a19bdf0d1",
+                "resourcePath": "objects\\obj_food_score\\obj_food_score.yy",
+                "resourceType": "GMObject"
             }
         },
         {
